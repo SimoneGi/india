@@ -27,6 +27,8 @@ gem 'bootstrap-sass'
 
 gem 'stripe'
 
+gem "figaro"
+
 
 
 # Use ActiveModel has_secure_password

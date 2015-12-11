@@ -38,19 +38,33 @@
         </article>
         <aside id="details-aside" class="col-sm-4">
             <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</a>
+
+            <%= form_tag charges_path do %>
+                     <article>
+                       <label class="amount">
+                         <span>Amount: $180</span>
+                       </label>
+                    </article>
+
+                     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                       data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                       data-description="A month's subscription"
+                       data-amount="18000"></script>
+                    <% end %>
+
             <ul id="details-infobox" class="list-group">
               <li class="list-group-item active clearfix">DETAILS</li>
-              <li class="list-group-item">You'll get one video</li>
+              <li class="list-group-item">Free Consultation</li>
               <li class="list-group-item clearfix">
-                <span class="pull-left content-qualifier">Length</span>
-                <span class="pull-right">30 minutes</span>
+                <span class="pull-left content-qualifier">Roxcy Points</span>
+                <span class="pull-right">30</span>
               </li>
             </ul>
         </aside>
     </section>
 </div>
 <footer id="site-footer">
-Made by <a href="http://onemonth.com" target="_blank"><img id="one-month-footer-logo" src="img/one-month-logo.svg" alt="One Month"></a>
+A WP Fenton Company
 </footer>
 
 <!-- Modal -->

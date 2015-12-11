@@ -1,6 +1,7 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 /*REUSABLE STYLES */
-@import 'bootstrap';
-
 
 img {
     max-width: 100%;
@@ -20,7 +21,7 @@ ul.no-indent {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 537px;
     min-width: 320px;
 }
 
@@ -35,7 +36,7 @@ ul.no-indent {
 /* SHARED PAGE STYLES */
 
 body {
-    background: #353433;
+    background: url('../img/site-bg.gif') #353433;
     background-size: 25%;
     font-family: 'Open Sans', sans-serif;
 }
